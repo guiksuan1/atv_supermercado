@@ -25,11 +25,10 @@ public class AtvSupermercado {
             System.out.println("4 - Sair");
             System.out.print("Escolha uma opção: ");
             opcao = menu.nextInt();
-            menu.nextLine(); // limpar buffer
-
+            menu.nextLine();
+            
             switch (opcao) {
                 case 1:
-                    // Cadastro
                     for (int i = 0; i < listaProdutos.length; i++) {
                         listaProdutos[i] = new produtos_supermercado();
 
@@ -89,7 +88,7 @@ public class AtvSupermercado {
                         } else {
                             System.out.println("Nome: " + listaProdutos[i].getNome());
                             System.out.println("Preço: R$ " + listaProdutos[i].getPreco());
-                            System.out.println("Quantidade: " + listaProdutos[i].getQtd_estoque());
+                            System.out.println("Quantidade: " + listaProdutos[i].getQtd_estoque()+ " Unidades");
                             System.out.println("Código: " + listaProdutos[i].getCodigo());
                         }
                     }
